@@ -1,63 +1,52 @@
 
 public class LibraryItems {
 
-    private String title, author, subject, ageGroup;
-    private boolean availability; 
+    private String title, subject;
     private int datePublished, isbn;
+
+    // CONSTRUCTOR
+    public LibraryItems(String title, String subject, int datePublished, int isbn) {
+        this.title = title;
+        this.subject = subject;
+        this.datePublished = datePublished;
+        this.isbn = isbn;
+    }
+
+    // GETTERS
+
+    public String getTitle() {
+        return title;
+
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public int getDatePublished() {
+        return datePublished;
+    }
+
+    public int isbn() {
+        return isbn;
+    }
+
+    // SETTERS
+
+    public void setAuthor(String title) {
+        this.title = title;
+    }
+
+    public void setGenre(String subject) {
+        this.subject = subject;
+
+    }
+
+    public void setDatePublished(int datePublished) {
+        this.datePublished = datePublished;
+    }
+
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
+    }
 }
-
-// CONSTRUCTOR
-public LibraryItems(String title, String author, String subject, String ageGroup, boolean availability, int datePublished, int isbn){
-    this.title = title;
-    this.author = author;
-    this.subject = subject;
-    this.ageGroup = ageGroup;
-    this.availability = availability;
-    this.datePublished = datePublished;
-    this.isbn = isbn;
-}
-
-
-// GETTERS
-public String getAuthor(){
-    return author;
-}
-
-public String getGenre(){
-    return genre;
-}
-
-public boolean getAvailability(){
-    return available;
-}
-
-public int getDatePublished(){
-    return datePublished;
-}
-
-// SETTERS
-
-public void setAuthor(String author){
-    this.author = author;
-}
-
-public void setGenre(String genre){
-    this.genre = genre;
-
-}
-
-public void setAvailability(boolean availability){
-    this.availability = availability;
-}
-
-public void setDatePublished(int datePublished){
-    this.datePublished = datePublished
-}
-
-
-
-
-
-
-
-
